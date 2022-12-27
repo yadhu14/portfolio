@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/205ca89153.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_pc.jpg" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Service</a></li>
+                    <li><a href="#project" onclick="closemenu()">Project</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" id="menuicon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Python Developer</p>
+                <h1>Hi,<br> I'm<span> Yadhu Krishnan</span></h1>
+                <p id="home_description">High level experience in the python developement,<br> producing quality work</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------about------------------- -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image_py.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me </h1><br><br>
+                    <p>Passionate developer based in india , constantly experimenting with new technologies
+                        and techniques, striving to become a better myself as a developer and i love what i do.</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend developer</span><br>HTML, CSS, JavaScript, React</li>
+                                <li><span>Backend developer</span><br>Python, PHP, C++, NodeJs</li>
+                                <li><span>Designer</span><br>Figma, Sketch, Photoshop</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> 2022 - Current</span><br>odoo/python developer at <a href="https://www.cybrosys.com/" style="color: #ababab;">cybrosys technologies</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> 2016 - 2017</span><br>SSLC, Kerala state</li>
+                                <li><span> 2017 - 2019</span><br>Plus Two, Kerala state</li>
+                                <li><span> 2019 - 2022</span><br>Bsc Computer Science, Bharathiar University</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------------------------ services ---------------------------------  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1><br><br>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>
+                        Web design encompasses many different skills and disciplines in the production and 
+                        maintenance of websites. The different areas of web design include web graphic design; 
+                        user interface design (UI design); authoring, including standardised code and proprietary 
+                        software; user experience design (UX design); and search engine optimization.
+                    </p>
+                        <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-circle"></i>
+                    <h2>Odoo / Python Developer</h2>
+                    <p>Odoo's extensible architecture allows a large number of freelancers and organizations 
+                    to develop Odoo Apps or Modules and place them in the marketplace for sale or to be 
+                    downloaded for free. The main Od    oo components are the framework, about 30 core applications 
+                    (also called official modules), and thousands of community modules.</p>
+                        <a href="https://en.wikipedia.org/wiki/Odoo">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Django Developer</h2>
+                    <p>Django (/ˈdʒæŋɡoʊ/ JANG-goh; sometimes stylized as django)[6] is a free and open-source, 
+                    Python-based web framework that follows the model–template–views (MTV) architectural pattern.
+                    It is maintained by the Django Software Foundation (DSF), an independent organization established in the US as a 501(c)(3) non-profit.</p>
+                        <a href="https://en.wikipedia.org/wiki/Django_(web_framework)">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================= projects ============================  -->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1><br><br>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/portfolio1.jpg">
+                    <div class="layer">
+                        <h3>Career Devolopement</h3>
+                        <p>Web application for the students and jobseeker. Students can find their 
+                        next step to their future and job seeker can find the new job oppertunity in the same app.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio2.jpg">
+                    <div class="layer">
+                        <h3>Hospital Management</h3>
+                        <p>This app is developed through odoo. Odoo is open source erp .You can manage your hospital details through this app.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio3.jpg">
+                    <div class="layer">
+                        <h3>Responsive Website</h3>
+                        <p>created responsive portfolio and websites</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ================================= contacts ================================ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> yadhukrishnanmanu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +917306638240</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/y.d.u_?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Yadhu12349?t=u5bkJYE4htovCQ11tCXYFw&s=09"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/yadhu14"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yadhu-krishnan-k-740a3b247"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="You Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzURvuJTMHmvzfUXzZNRK3ECQTWPS5tg3hSD4G4ps2iFxUu1h5RogTPnx5y2UTvUXAEHA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    
+</body>
+</html>
